@@ -1,6 +1,24 @@
+@import url('./colors.css');
+
+body{
+    background-color: var(--pale-blue);
+}
+
 .app{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 0 2rem;
+    background-image: url(./assets/pattern-background-desktop.svg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: repeat-x;
+}
+
+@media (max-width : 500px) {
+    .app{
+        background-image: url(./assets/pattern-background-mobile.svg);
+    }
 }
